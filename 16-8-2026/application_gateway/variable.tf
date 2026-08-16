@@ -9,5 +9,6 @@ variable "application_gateways" {
     sku_capacity         = number
     subnet_id            = string
     public_ip_address_id = string
+    enable_http2         = bool
   }))
 }

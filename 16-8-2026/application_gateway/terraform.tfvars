@@ -8,6 +8,7 @@ application_gateways = {
     sku_capacity         = 2
     subnet_id            = "/subscriptions/{subscriptionId}/resourceGroups/myrgpract1/providers/Microsoft.Network/virtualNetworks/myvnet1/subnets/mysubnet1"
     public_ip_address_id = "/subscriptions/{subscriptionId}/resourceGroups/myrgpract1/providers/Microsoft.Network/publicIPAddresses/mypublicip1"
+    enable_http2         = true
   }
   appgw2 = {
     name                 = "myappgw2"
@@ -18,5 +19,6 @@ application_gateways = {
     sku_capacity         = 2
     subnet_id            = "/subscriptions/{subscriptionId}/resourceGroups/myrgpract2/providers/Microsoft.Network/virtualNetworks/myvnet2/subnets/mysubnet3"
     public_ip_address_id = "/subscriptions/{subscriptionId}/resourceGroups/myrgpract2/providers/Microsoft.Network/publicIPAddresses/mypublicip2"
+    enable_http2         = true
   }
 }

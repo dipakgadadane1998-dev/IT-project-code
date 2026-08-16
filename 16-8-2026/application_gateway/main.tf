@@ -5,7 +5,7 @@ resource "azurerm_application_gateway" "appgw" {
   name                = each.value.name
   location            = each.value.location
   resource_group_name = each.value.resource_group_name
-  enable_http2        = true
+  enable_http2        = each.value.enable_http2
 
   sku {
     name     = each.value.sku_name
