@@ -37,7 +37,7 @@ resource "azurerm_application_gateway" "appgw" {
     cookie_based_affinity = "Disabled"
     port                  = 80
     protocol              = "Http"
-    request_timeout       = 1
+    request_timeout       = 30
   }
 
   http_listener {
