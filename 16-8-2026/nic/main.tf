@@ -1,4 +1,4 @@
-variable "network_interfaces" {}
+
 
 resource "azurerm_network_interface" "nic" {
   for_each            = var.network_interfaces
